@@ -1,0 +1,931 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Coding Portfolio</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+<!-- Follow Us Pop-up -->
+<div class="follow-popup" id="followPopup">
+  <div class="follow-popup-content">
+    <span class="close-btn" id="closePopup">&times;</span>
+    <h3>Follow Us!</h3>
+    <p>Stay updated with our latest news and updates.</p>
+    <div class="social-buttons">
+      <a href="https://www.instagram.com/codingwithbenca/#" target="_blank" class="social-btn instagram-btn">
+        <i class="fab fa-instagram"></i> Follow on Instagram
+      </a>
+      <a href="https://web.facebook.com/?ref=homescreenpwa&_rdc=1&_rdr" target="_blank" class="social-btn facebook-btn">
+        <i class="fab fa-facebook-f"></i> Follow on Facebook
+      </a>
+    </div>
+  </div>
+</div>
+<!-- Feedback Pop-up Modal -->
+<div class="feedback-popup" id="feedbackPopup">
+  <div class="feedback-popup-content">
+    <span class="close-btn" id="closeFeedback">&times;</span>
+    <h3>We Value Your Feedback</h3>
+    <form id="feedbackForm">
+      <input type="text" name="name" placeholder="Your Name" required>
+      <input type="email" name="email" placeholder="Your Email" required>
+      <textarea name="message" placeholder="Your Feedback" required></textarea>
+      <button type="submit">Submit Feedback</button>
+    </form>
+  </div>
+</div>
+
+  <header>
+    <!-- Burger Menu for mobile screens -->
+    <div class="burger-menu" id="burger-menu">
+      <div class="line"></div>
+      <div class="line"></div>
+      <div class="line"></div>
+    </div>
+
+    <!-- Menu on the left (with cool icons) -->
+    <nav class="nav-menu" id="nav-menu">
+      <ul>
+        <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+        <li><a href="about-me.html"><i class="fas fa-user"></i> About Me</a></li>
+        <li><a href="contact.html"><i class="fas fa-envelope"></i> Contact</a></li>
+        <li><a href="services.html"><i class="fas fa-cogs"></i> Services</a></li>
+      </ul>
+    </nav>
+
+    <!-- Centered Logo and Slogan -->
+    <div class="logo-section">
+      <img src="Screenshot 2024-09-06 215314.png" alt="CodingWithBenca Logo" class="logo-img">
+      <h1 class="logo">CodingWithBenca</h1>
+    </div>
+  </header>
+
+  <section class="about-me" id="about">
+    <div class="intro">
+      <h2>Hello, I'm Benca</h2>
+      <p>Welcome to Coding with Benca, where technology meets creativity. Explore my projects and learn about the innovative solutions I create with a passion for coding.</p>
+    </div>
+  </section>
+
+  <div class="header-buttons">
+    <a href="about-me.html" class="header-btn">About Me</a>
+    <a href="services.html" class="header-btn">My Services</a>
+  </div>
+
+  <section class="portfolio" id="portfolio">
+    <div class="image-slider">
+      <figure class="slide">
+        <img src="Screenshot 2024-09-06 215314.PNG" alt="Image 1">
+        <figcaption>“Crafting Digital Masterpieces: Transforming Your Vision into a Seamless Online Experience, One Line of Code at a Time.”</figcaption>
+      </figure>
+      <figure class="slide">
+        <img src="OIP.jpg" alt="Image 2">
+        <figcaption>“Innovative Web Solutions: Bridging Creativity and Technology to Build Websites that Inspire, Engage, and Drive Success.”</figcaption>
+      </figure>
+      <figure class="slide">
+        <img src="SE.jpg" alt="Image 3">
+        <figcaption>“Empowering Your Digital Presence: From Concept to Launch, We Create Websites that Elevate Your Brand and Connect with Your Audience.”</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <section class="professional-work" id="services">
+    <h2>Professional Work Videos</h2>
+    <div class="video-gallery">
+      <div class="video">
+        <iframe src="0907 (1).mp4" frameborder="0" allowfullscreen></iframe>
+        <p>“Building the Future, One Line of Code at a Time.”</p>
+      </div>
+      <div class="video">
+        <iframe src="WhatsApp Video 2024-09-11 at 13.26.29_322af792.mp4" frameborder="0" allowfullscreen></iframe>
+        <p>“Innovate, Code, Succeed.”</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="testimonials" id="testimonials">
+    <h2>What People Say</h2>
+    <div class="testimonial">
+      <p>“Benca is an exceptional developer who consistently delivers high-quality work. Highly recommended!”</p>
+      <span>- Client Name</span>
+    </div>
+    <div class="testimonial">
+      <p>“The projects completed by Coding with Benca have greatly enhanced our online presence. Fantastic work!”</p>
+      <span>- Client Name</span>
+    </div>
+  </section>
+
+  <section class="skills" id="skills">
+    <h2>My Skills</h2>
+    <div class="skill">
+      <h3>Web Development</h3>
+      <p>Expert in HTML, CSS, JavaScript, and various frameworks.</p>
+    </div>
+    <div class="skill">
+      <h3>Design</h3>
+      <p>Proficient in creating modern and responsive designs.</p>
+    </div>
+    <div class="skill">
+      <h3>SEO</h3>
+      <p>Experience in optimizing websites for search engines.</p>
+    </div>
+  </section>
+
+  <section class="blog" id="blog">
+    <h2>Latest Blog Posts</h2>
+    <article class="post">
+      <h3><a href="#">How to Build a Modern Website in 2024</a></h3>
+      <p>Learn the best practices for creating a contemporary website that stands out in today's digital landscape.</p>
+    </article>
+    <article class="post">
+      <h3><a href="#">Top 10 Web Development Trends</a></h3>
+      <p>Stay ahead of the curve with the latest trends in web development and design.</p>
+    </article>
+  </section>
+
+  <section class="contact" id="contact">
+    <h2>Get in Touch</h2>
+    <form action="#" method="post">
+      <input type="text" name="name" placeholder="Your Name" required>
+      <input type="email" name="email" placeholder="Your Email" required>
+      <textarea name="message" placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>All content Copyright © 2024 Coding with Benca</p>
+    <div class="social-links">
+      <a href="https://www.instagram.com/codingwithbenca/#" target="_blank"><i class="fab fa-instagram"></i> Instagram</a>
+      <a href="https://web.facebook.com/?ref=homescreenpwa&_rdc=1&_rdr" target="_blank"><i class="fab fa-facebook-f"></i> Facebook</a>
+    </div>
+    <div class="footer-links">
+      <a href="#about">About Me</a>
+      <a href="#portfolio">Portfolio</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
+<style>
+/* Feedback Pop-up Styles */
+.feedback-popup {
+  display: none; /* Hidden by default */
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80%;
+  max-width: 500px;
+  background: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  z-index: 1000; /* Ensure it appears above other content */
+}
+
+.feedback-popup-content {
+  padding: 20px;
+  text-align: center;
+}
+
+.feedback-popup h3 {
+  margin-top: 0;
+  color: #333;
+}
+
+.feedback-popup form {
+  display: flex;
+  flex-direction: column;
+}
+
+.feedback-popup input,
+.feedback-popup textarea {
+  margin-bottom: 10px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.feedback-popup button {
+  padding: 10px;
+  background-color: #007bff;
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s;
+}
+
+.feedback-popup button:hover {
+  background-color: #0056b3;
+}
+
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 24px;
+  color: #333;
+  cursor: pointer;
+}
+
+/* Pop-up Styles */
+.follow-popup {
+  display: none; /* Hidden by default */
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 300px;
+  background: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  z-index: 1000; /* Ensures it appears above other content */
+}
+
+.follow-popup-content {
+  padding: 20px;
+  text-align: center;
+}
+
+.follow-popup h3 {
+  margin-top: 0;
+  color: #333;
+}
+
+.follow-popup p {
+  color: #555;
+}
+
+.social-buttons {
+  margin-top: 20px;
+}
+
+.social-btn {
+  display: inline-block;
+  padding: 10px 20px;
+  color: #ffffff;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 16px;
+  margin: 5px;
+  transition: background 0.3s, transform 0.3s;
+}
+
+.social-btn i {
+  margin-right: 8px;
+}
+
+.instagram-btn {
+  background: #e4405f; /* Instagram color */
+}
+
+.facebook-btn {
+  background: #1877f2; /* Facebook color */
+}
+
+.instagram-btn:hover {
+  background: #d1355b;
+  transform: scale(1.05);
+}
+
+.facebook-btn:hover {
+  background: #165eab;
+  transform: scale(1.05);
+}
+
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 24px;
+  color: #333;
+  cursor: pointer;
+}
+
+/* General Section Styling */
+section {
+  padding: 40px 20px;
+  color: #ffffff;
+  text-align: center;
+  background: linear-gradient(to right, #a0c4ff, #ff6b81); /* Blue to pink gradient */
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  margin-bottom: 20px;
+}
+
+/* Testimonials */
+.testimonials {
+  background: linear-gradient(to right, #a0c4ff, #ff6b81); /* Gradient background matching the rest of the site */
+}
+
+.testimonials h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+  color: #ffffff; /* Ensure the text is visible on the gradient background */
+}
+
+.testimonial {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  background: rgba(0, 0, 0, 0.6); /* Darker background for testimonials */
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.testimonial p {
+  font-size: 18px;
+  margin-bottom: 10px;
+  font-style: italic;
+}
+
+.testimonial span {
+  display: block;
+  font-size: 16px;
+  color: #e0e0e0; /* Slightly lighter text for the client's name */
+}
+
+/* Skills */
+.skills {
+  background: linear-gradient(to right, #a0c4ff, #ff6b81); /* Gradient background matching the rest of the site */
+}
+
+.skills h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+  color: #ffffff; /* Ensure the text is visible on the gradient background */
+}
+
+.skill {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  background: rgba(0, 0, 0, 0.6); /* Darker background for skills */
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.skill h3 {
+  font-size: 22px;
+  margin-bottom: 10px;
+  color: #ffffff; /* Ensure the text is visible */
+}
+
+.skill p {
+  font-size: 16px;
+  color: #e0e0e0; /* Light grey text for descriptions */
+}
+
+/* Blog */
+.blog {
+  background: linear-gradient(to right, #a0c4ff, #ff6b81); /* Gradient background matching the rest of the site */
+}
+
+.blog h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+  color: #ffffff; /* Ensure the text is visible on the gradient background */
+}
+
+.post {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  background: rgba(0, 0, 0, 0.6); /* Darker background for blog posts */
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.post h3 {
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+
+.post a {
+  color: #ff6b81; /* Pink color for links */
+  text-decoration: none;
+}
+
+.post a:hover {
+  text-decoration: underline;
+}
+
+.post p {
+  font-size: 16px;
+  color: #e0e0e0; /* Light grey text for post descriptions */
+}
+
+/* Header Styling */
+header {
+  background: #fff; /* Background color of the header */
+  padding: 20px; /* Padding around the header content */
+  text-align: center; /* Center align all content inside header */
+}
+
+/* Logo Section Styling */
+.logo-section {
+  display: flex;
+  flex-direction: column; /* Stack logo and slogan vertically */
+  align-items: center; /* Center content horizontally */
+  gap: 10px; /* Space between logo and slogan */
+}
+
+/* Logo Image Styling */
+.logo-img {
+  max-width: 50%; /* Make sure the logo is responsive */
+  height: auto; /* Maintain aspect ratio */
+  width: 50px; /* Adjust the width of the logo */
+}
+
+/* Slogan Styling */
+.slogan {
+  font-size: 16px; /* Font size for the slogan */
+  color: #555; /* Color of the slogan text */
+  margin: 0; /* Remove default margin */
+}
+
+/* Reset and base styling */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Global background with a soft blue tint */
+body {
+  font-family: Arial, sans-serif;
+  color: #333;
+  background: linear-gradient(135deg, #a0c4ff, #fbc2eb); /* Blue to pink gradient */
+  min-height: 100vh;
+  position: relative;
+}
+
+/* Create the blue and pink glow effect */
+body::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(circle, rgba(255, 105, 180, 0.2) 0%, rgba(0, 204, 255, 0.1) 70%);
+  filter: blur(10px);
+  z-index: -1;
+}
+
+/* Header layout */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background: rgba(0, 0, 0, 0.7); /* Slightly transparent black */
+  color: #ffffff;
+  position: relative;
+  z-index: 1;
+}
+
+/* Menu on the left with cool icons */
+.nav-menu ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+/* Navigation menu */
+.nav-menu ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-menu ul li {
+  position: relative;
+}
+
+.nav-menu ul li a {
+  color: #ffffff; /* White color for text */
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: bold;
+  position: relative;
+  transition: color 0.3s, transform 0.3s;
+}
+
+.nav-menu ul li a::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 2px;
+  background: #ff6b81; /* Pink underline */
+  transition: width 0.3s ease, background-color 0.3s ease;
+}
+
+.nav-menu ul li a:hover {
+  color: #ff6b81; /* Pink color on hover */
+  transform: scale(1.1); /* Slightly enlarge the text on hover */
+}
+
+.nav-menu ul li a:hover::before {
+  width: 100%; /* Expand underline on hover */
+}
+
+/* Centered logo */
+.logo-section {
+  text-align: center;
+  flex-grow: 1;
+}
+
+.logo {
+  font-size: 28px;
+  color: #ffffff;
+  text-shadow: 0 0 5px #ff6b81; /* Pink glowing effect */
+  animation: glow 1.5s infinite; /* Glowing animation for logo */
+}
+
+/* Burger menu for small screens */
+.burger-menu {
+  width: 30px;
+  height: 22px;
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  cursor: pointer;
+}
+
+.burger-menu .line {
+  width: 100%;
+  height: 3px;
+  background-color: #ffffff;
+  transition: all 0.3s ease;
+}
+
+/* Responsive for small screens */
+@media (max-width: 768px) {
+  .burger-menu {
+    display: flex;
+  }
+
+  .nav-menu {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 70px;
+    left: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.9); /* Slightly transparent background */
+  }
+
+  .nav-menu.nav-active {
+    display: flex;
+  }
+
+  /* Burger menu animation */
+  .burger-menu.toggle .line:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+  }
+
+  .burger-menu.toggle .line:nth-child(2) {
+    opacity: 0;
+  }
+
+  .burger-menu.toggle .line:nth-child(3) {
+    transform: rotate(-45deg) translate(5px, -5px);
+  }
+}
+
+/* About Me Section */
+.about-me {
+  background: linear-gradient(to right, #a0c4ff, #ff6b81); /* Blue to pink gradient */
+  padding: 40px 20px;
+  text-align: center;
+  color: #ffffff;
+  border-bottom: 5px solid #ff6b81; /* Pink border at the bottom */
+  animation: fadeIn 2s ease-out; /* Fade-in animation */
+}
+
+.about-me .intro {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.about-me h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  animation: bounce 1s infinite; /* Bouncing animation for headings */
+}
+
+.about-me p {
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+/* Portfolio Section */
+.portfolio {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Adjust height as needed */
+  background: linear-gradient(135deg, #a0c4ff, #fbc2eb); /* Blue to pink gradient */
+  overflow: hidden;
+  position: relative;
+  animation: fadeIn 2s ease-out; /* Fade-in animation */
+}
+
+.image-slider {
+  position: relative;
+  width: 300px;
+  height: 600px;
+}
+
+.slide {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  animation: slideAway 21s infinite; /* Slide away animation */
+  transition: transform 0.5s ease, opacity 0.5s ease;
+}
+
+.slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+  position: relative;
+}
+
+.slide figcaption {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.6);
+  color: #ffffff;
+  padding: 10px;
+  text-align: center;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  font-size: 14px;
+}
+
+/* Keyframe Animations */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes slideAway {
+  0%, 100% {
+    opacity: 0;
+    transform: translateX(100%) scale(0.8);
+  }
+  10%, 30% {
+    opacity: 1;
+    transform: translateX(0) scale(1);
+  }
+  40%, 60% {
+    opacity: 0;
+    transform: translateX(-100%) scale(0.8);
+  }
+}
+
+.slide:nth-child(1) {
+  animation-delay: 0s;
+}
+.slide:nth-child(2) {
+  animation-delay: 7s;
+}
+.slide:nth-child(3) {
+  animation-delay: 14s;
+}
+
+/* Professional Work Section */
+.professional-work {
+  padding: 40px 20px;
+  background: linear-gradient(to right, #a0c4ff, #ff6b81); /* Blue to pink gradient */
+  text-align: center;
+  color: #ffffff;
+  border-bottom: 5px solid #ff6b81; /* Pink border at the bottom */
+  animation: fadeIn 2s ease-out; /* Fade-in animation */
+}
+
+.professional-work h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+
+
+/* Contact Section */
+.contact {
+  padding: 40px 20px;
+  background: linear-gradient(to right, #a0c4ff, #ff6b81); /* Blue to pink gradient */
+  text-align: center;
+  color: #ffffff;
+  animation: fadeIn 2s ease-out; /* Fade-in animation */
+}
+
+.contact h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.contact p {
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+.contact .contact-form {
+  max-width: 600px;
+  margin: 0 auto;
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2); /* Soft shadow for form */
+}
+
+/* Footer styling */
+footer {
+  padding: 20px;
+  background: #333;
+  color: #ffffff;
+  text-align: center;
+}
+
+footer a {
+  color: #1e90ff;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+/* Keyframe Animations */
+@keyframes glow {
+  0% { text-shadow: 0 0 10px #ff6b81, 0 0 20px #ff6b81, 0 0 30px #ff6b81, 0 0 40px #ff6b81, 0 0 50px #ff6b81, 0 0 60px #ff6b81, 0 0 70px #ff6b81; }
+  50% { text-shadow: 0 0 20px #ff6b81, 0 0 30px #ff6b81, 0 0 40px #ff6b81, 0 0 50px #ff6b81, 0 0 60px #ff6b81, 0 0 70px #ff6b81, 0 0 80px #ff6b81; }
+  100% { text-shadow: 0 0 10px #ff6b81, 0 0 20px #ff6b81, 0 0 30px #ff6b81, 0 0 40px #ff6b81, 0 0 50px #ff6b81, 0 0 60px #ff6b81, 0 0 70px #ff6b81; }
+}
+
+@keyframes pulse {
+  0% { opacity: 0.5; }
+  50% { opacity: 0.7; }
+  100% { opacity: 0.5; }
+}
+
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% { transform: translateY(0); }
+  40% { transform: translateY(-30px); }
+  60% { transform: translateY(-15px); }
+}
+/* Header Buttons Container */
+.header-buttons {
+  display: flex;
+  justify-content: center; /* Center buttons horizontally */
+  gap: 20px; /* Space between buttons */
+  margin: 20px 0; /* Margin around the buttons */
+}
+
+/* Individual Button */
+.header-btn {
+  display: inline-block;
+  padding: 10px 20px; /* Adjust padding for button size */
+  font-size: 16px; /* Adjust font size */
+  color: #ffffff; /* Text color */
+  text-decoration: none; /* Remove underline from links */
+  background: linear-gradient(135deg, #ff6b81, #a0c4ff); /* Gradient background */
+  border-radius: 5px; /* Rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+  transition: background 0.3s ease, transform 0.3s ease; /* Smooth transitions for background and hover effect */
+}
+
+/* Hover Effect for Buttons */
+.header-btn:hover {
+  background: linear-gradient(135deg, #a0c4ff, #ff6b81); /* Reverse gradient on hover */
+  transform: translateY(-2px); /* Slight lift effect */
+}
+
+/* Focus Effect for Accessibility */
+.header-btn:focus {
+  outline: 2px solid #ff6b81; /* Outline to indicate focus */
+  outline-offset: 4px; /* Space between the button and outline */
+}
+/* Contact Section Styling */
+.contact {
+  padding: 40px 20px;
+  background: linear-gradient(to right, #a0c4ff, #004e92); /* Blue gradient background */
+  color: #ffffff; /* White text color */
+  text-align: center; /* Center align text */
+}
+
+/* Contact Section Heading */
+.contact h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+  color: #ffffff; /* White text color for heading */
+}
+
+/* Contact Form Styling */
+.contact form {
+  max-width: 500px;
+  margin: 0 auto; /* Center the form horizontally */
+  background: rgba(255, 255, 255, 0.9); /* White background with slight transparency */
+  padding: 20px;
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Subtle shadow effect */
+}
+
+/* Input and Textarea Styling */
+.contact input[type="text"],
+.contact input[type="email"],
+.contact textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #004e92; /* Blue border */
+  border-radius: 5px; /* Rounded corners */
+  box-sizing: border-box; /* Include padding and border in the element's total width and height */
+  font-size: 16px;
+  color: #333; /* Dark text color for readability */
+}
+
+/* Textarea Specific Styling */
+.contact textarea {
+  height: 150px; /* Height of the textarea */
+  resize: vertical; /* Allow vertical resizing */
+}
+
+/* Button Styling */
+.contact button {
+  background: #004e92; /* Dark blue background */
+  color: #ffffff; /* White text color */
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px; /* Rounded corners */
+  cursor: pointer; /* Pointer cursor on hover */
+  font-size: 16px;
+  transition: background 0.3s ease; /* Smooth background transition */
+}
+
+/* Button Hover Styling */
+.contact button:hover {
+  background: #003b6f; /* Slightly darker blue on hover */
+}
+
+</style>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ad Blocker Prompt</title>
+  <style>
+    .ad-blocker-prompt {
+      display: none;
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background: #ffdddd;
+      color: #d8000c;
+      padding: 15px;
+      text-align: center;
+      border: 1px solid #d8000c;
+    }
+    .ads {
+      display: none; /* Initially hidden */
+      background: #f0f0f0;
+      padding: 20px;
+      text-align: center;
+      margin: 20px 0;
+    }
+  </style>
+</head>
+<body>
+  <!-- Ad Blocker Prompt -->
+  <div class="ad-blocker-prompt" id="ad-blocker-prompt">
+    <p>We noticed that you are using an ad blocker. Would you like to block ads on this site? 
+       <button onclick="handleAdBlockChoice(true)">Yes</button> 
+       <button onclick="handleAdBlockChoice(false)">No</button>
+    </p>
+  </div>
+
+  <!-- Ad Section -->
+  <div class="ads" id="ads">
+    <p>Here are some ads:</p>
+    <!-- Placeholder for ads -->
+    <p>Ad Content Here</p>
+  </div>

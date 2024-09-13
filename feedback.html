@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Feedback</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      background: linear-gradient(to right, #003366, #66ccff); /* Dark blue to sky blue gradient */
+      color: #fff;
+    }
+
+    .feedback-form {
+      background-color: #fff;
+      padding: 20px;
+      margin: 20px auto;
+      max-width: 600px;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      color: #333;
+    }
+
+    .feedback-form h2 {
+      margin-bottom: 20px;
+      color: #ff69b4; /* Glowing pink color for the title */
+    }
+
+    .feedback-form input, 
+    .feedback-form textarea {
+      width: calc(100% - 22px);
+      padding: 10px;
+      margin: 10px 0;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+    }
+
+    .feedback-form button {
+      background-color: #003366;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 16px;
+      transition: background-color 0.3s;
+    }
+
+    .feedback-form button:hover {
+      background-color: #00509e;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav class="nav-menu">
+      <ul>
+        <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+        <li><a href="about-me.html"><i class="fas fa-user"></i> About Me</a></li>
+        <li><a href="contact.html"><i class="fas fa-envelope"></i> Contact</a></li>
+        <li><a href="services.html"><i class="fas fa-cogs"></i> Services</a></li>
+        <li><a href="feedback.html"><i class="fas fa-comments"></i> Feedback</a></li>
+      </ul>
+    </nav>
+    <div class="logo-section">
+      <h1 class="logo">CodingWithBenca</h1>
+    </div>
+  </header>
+
+  <section class="feedback-form">
+    <h2>We Value Your Feedback</h2>
+    <form id="feedback-form" action="submit-feedback.php" method="post">
+      <input type="text" name="name" placeholder="Your Name" required>
+      <input type="email" name="email" placeholder="Your Email" required>
+      <textarea name="message" placeholder="Your Feedback" rows="6" required></textarea>
+      <button type="submit">Submit Feedback</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>All content Copyright © 2024 Coding with Benca</p>
+    <div class="social-links">
+      <a href="https://instagram.com/yourprofile" target="_blank"><i class="fab fa-instagram"></i> Instagram</a>
+      <a href="https://facebook.com/yourprofile" target="_blank"><i class="fab fa-facebook-f"></i> Facebook</a>
+    </div>
+  </footer>
+</body>
+</html>
